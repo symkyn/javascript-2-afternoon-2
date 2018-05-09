@@ -225,12 +225,19 @@ var addItem = (myGroceryList, item) => {
 ////////// PROBLEM 9 //////////
 
 /*
-  Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
+  Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns 
+  the array.
 */
 
 //Code Here
 
-
+const maker = () => {
+  let newArray = [];
+  for (var i = 1; i <= 215; i++){
+    newArray.push(i);
+  }
+  return newArray;
+}
 
 ////////// PROBLEM 10 //////////
 

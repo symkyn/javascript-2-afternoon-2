@@ -253,6 +253,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   
 //Code Here
 
+var addTen = (numbers) => {
+  
+  for(var i = 0; i < numbers.length; i++) {
+    numbers[i] = Number(numbers[i]) + 10;
+  }
+  return numbers;
+}
+
+
 
 
 ////////// PROBLEM 11 //////////

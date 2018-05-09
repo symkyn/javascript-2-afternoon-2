@@ -53,6 +53,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 //Code Here
 
+let looper = (family) => {
+  for (var i = 0; i < family.length; i ++){
+    alert(family[i]);
+  } 
+}
+
 
 
 ////////// PROBLEM 4 //////////
@@ -68,6 +74,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 
+var reversedLooper = (letters) => {
+  for (var i = letters.length - 1; i >= 0; i--) {
+    alert(letters[i]);
+  }
+}
+
 
 
 ////////// PROBLEM 5 //////////
@@ -81,6 +93,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
+var evenFinder = (nums) => {
+  let newArray = [];
+    nums.forEach(e => {
+      if(e % 2 === 0) {
+        newArray.push(e);
+      }
+    });
+  return newArray;
+}
 //Code Here
 
 

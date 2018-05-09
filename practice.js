@@ -148,7 +148,9 @@ var getRandomArbitrary = function() {
 
 /* 
   var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-  Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+  Above you're given a function that will return a random number between 0 
+  and 30. There is also a commented out array full of numbers to help you 
+  visualize what your function will be receiving.
   Write a function named finder that will take in an array as an argument.
   It will then  get a random number (by invoking getRandomArbitrary).
   Loop through the array to see if that random number is in the array. 
@@ -156,7 +158,14 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+var finder = (arr) => {
+  let randomNumber = getRandomArbitrary();
+    if (arr.indexOf(randomNumber) === -1) {
+      return false;
+    } else {
+      return true;
+    }
+}
 
 
 ////////// PROBLEM 8 //////////

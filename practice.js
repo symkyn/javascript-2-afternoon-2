@@ -287,7 +287,13 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
-
+var longer = (arr1, arr2) => {
+  if (arr1.length > arr2.length) {
+    return arr1;
+  } else {
+    return arr2;
+  }
+}
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
@@ -298,7 +304,17 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+let both = (arr1, arr2) => {
+  let newArray = [];
+  for(var i = 0; i < arr1.length; i++){
+    arr2.forEach(e => {
+      if(arr1[i] === e){
+        newArray.push(e);
+      }
+    })
+  }
+  return newArray;
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -338,7 +354,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(tyler, cahlan, ryan, colt);
+console.log(devMountainEmployees.length);
 
 
 /*
@@ -348,6 +365,13 @@ var colt = {
 
 //Code Here
 
+for(var i = 0; i < devMountainEmployees.length; i++) {
+  if(devMountainEmployees[i].name === 'Cahlan'){
+    devMountainEmployees.splice(i,1);
+  }
+}
+
+console.log(devMountainEmployees.length);
 
 
 ////////// PROBLEM 13 //////////

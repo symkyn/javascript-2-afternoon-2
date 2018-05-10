@@ -371,23 +371,25 @@ for(var i = 0; i < devMountainEmployees.length; i++) {
   }
 }
 
-console.log(devMountainEmployees.length);
+// console.log(devMountainEmployees.length);
 
 
 ////////// PROBLEM 13 //////////
 
 
 /*
-  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of Data is to have an Array full of objects. 
+  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of Data is to have an Array full of 
+  objects. 
   Create an empty array called users.
 */
 
 //Code Here
-
+let users = []; 
 
 
 /*
-  Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
+  Now add three user objects to your users array. Each user object should contain the following properties. 
+  name, email, password, username.
 
   Include the following user1 object as one of the objects in your array.
 */
@@ -402,13 +404,15 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+users.push({name: 'Simon', email: 'dumbEmail@gmail.com', password: 'wnekjo3', username: 'lame',}, user1, 
+  {name: 'Ted', email: 'Ted@gmail.com', password: '3j8r9j', username: 'godman',});
 
 
 /*
   Now you have a very common data structure. 
   Twitter is a good use case.
-  It's easy to imagine that your followers list on Twitter is an Array full of objects and those objects contain properties about the specific person you follow.
+  It's easy to imagine that your followers list on Twitter is an Array full of objects and those objects contain 
+  properties about the specific person you follow.
 
   Now let's say that Tyler decided to delete his account.
   Loop through your array of objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
@@ -416,7 +420,10 @@ var user1 = {
 */
 
 //Code Here
-
+for(var i = 0; i < users.length; i++){
+  if(users[i].email === 'tylermcginnis33@gmail.com')
+    users.splice(i,1);
+}
 
 
 /*
